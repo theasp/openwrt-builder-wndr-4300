@@ -21,8 +21,9 @@ PACKAGES="bash bind-host iftop less libiwinfo-lua liblua libubus-lua
           luci-app-statistics luci-app-upnp luci-app-vnstat
           luci-app-watchcat luci-app-wol luci-base luci-lib-ip
           luci-lib-nixio luci-mod-admin-full luci-proto-ipv6
-          luci-proto-ppp luci-ssl luci-theme-bootstrap rpcd nmap-ssl
-          rsync uhttpd uhttpd-mod-ubus wget zile"
+          luci-proto-ppp luci-ssl luci-theme-bootstrap
+          openvpn-polarssl rpcd nmap-ssl rsync uhttpd uhttpd-mod-ubus
+          wget zile"
 
 if [ ! -e $FILE ]; then
     wget $URL
