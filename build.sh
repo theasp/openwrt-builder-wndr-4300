@@ -16,16 +16,16 @@ BINDIR="bin/$DEVICE"
 FILE=$(basename $URL)
 DIR=${FILE%.tar.bz2}
 
-PACKAGES="bash bind-host iftop less libiwinfo-lua liblua libubus-lua
-          libuci-lua lua luci luci-app-cshark luci-app-ddns
-          luci-app-diag-core luci-app-diag-devinfo luci-app-firewall
-          luci-app-ntpc luci-app-openvpn luci-app-sqm
-          luci-app-statistics luci-app-upnp luci-app-vnstat
-          luci-app-watchcat luci-app-wol luci-base luci-lib-ip
-          luci-lib-nixio luci-mod-admin-full luci-proto-ipv6
-          luci-proto-ppp luci-ssl luci-theme-bootstrap
-          openvpn-polarssl rpcd nmap-ssl rsync uhttpd uhttpd-mod-ubus
-          wget zile"
+PACKAGES="bash bind-host curl iftop less libiwinfo-lua liblua
+          libubus-lua libuci-lua lua luci luci-app-cshark
+          luci-app-ddns luci-app-diag-core luci-app-diag-devinfo
+          luci-app-firewall luci-app-ntpc luci-app-openvpn
+          luci-app-sqm luci-app-statistics luci-app-upnp
+          luci-app-vnstat luci-app-watchcat luci-app-wol luci-base
+          luci-lib-ip luci-lib-nixio luci-mod-admin-full
+          luci-proto-ipv6 luci-proto-ppp luci-theme-bootstrap
+          nginx nginx-syslog openvpn-polarssl rpcd nmap-ssl rsync
+          stunnel uhttpd uhttpd-mod-ubus wget zile"
 
 if [ ! -e $FILE ]; then
   wget $URL
