@@ -3,6 +3,7 @@ pipeline:
   build:
     group: build
     image: theasp/openwrt-builder
+    pull: true
     commands:
       - ./build.sh
 
